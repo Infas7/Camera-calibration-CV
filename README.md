@@ -1,15 +1,7 @@
 # Calculating disparity map from a stereo camera
 
-### 1. Task Overview
 
----
-
-1. Calculate the intrinsic parameters of left and right cameras
-2. Calculate the extrinsic parameters (rotation and translation) between left and right cameras
-3. Stereo rectification and undistortion
-4. Generation of disparity map
-
-### 2. Introduction
+### 1. Introduction
 
 ---
 
@@ -29,7 +21,7 @@ The generation of a disparity map from the stereo camera setup should follow cer
 > - Store added libraries in requirements.txt file.
 > - The scripts needed to complete each stage is not included into the practical sheet.
 
-### 3. Step-by-step guide for generating the disparity map
+### 2. Step-by-step guide for generating the disparity map
 
 ---
 
@@ -118,19 +110,3 @@ Now that the cameras are fully calibrated and rectified, they can be used to gen
 - [x] Save the disparity map
 
 Implement the SAD and NCC algorithms for stereo matching and compare the results with the openCV SGBM method. Try to tune the stereo matching algorithm to generate a smooth depth map.
-
-### 4. Additional task : Create a point cloud
-
----
-
-OpenCV has a feature to project disparity maps into a 3D space via generating a point cloud. Use the disparity map generated to create a point cloud of the given scene. 
-
-### 5. Submission
-
----
-
-- Use the given folders to save the images and camera parameters appropriately. 
-- Add all the libraries that you have used into the requirements.txt file.
-- Add your name and index number into each python script.
-- Commit and push the changes to your main remote branch.
-
